@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Gallery</title>
+    <link rel="icon" type="image/x-icon" href="Apple_Photos-512.webp">
+</head>
+<body>
+
+    <div class="view-image">
+        <img src="pexels-bri-schneiter-28802-346529.jpg" alt="land">
+        <span>X</span>
+    </div>
+    <div class="image-container">
+        <img src="pexels-bri-schneiter-28802-346529.jpg" alt="land" >
+        <img src="2.webp" alt="land" >
+        <img src="3.webp" alt="land" >
+        <img src="4.jpg" alt="land" >
+        <img src="pexels-bri-schneiter-28802-346529.jpg" alt="land" >
+        <img src="2.webp" alt="land" >
+        <img src="3.webp" alt="land" >
+        <img src="4.jpg" alt="land" >
+        <img src="pexels-bri-schneiter-28802-346529.jpg" alt="land" >
+        <img src="2.webp" alt="land" >
+        <img src="3.webp" alt="land" >
+        <img src="4.jpg" alt="land" >
+        <img src="pexels-bri-schneiter-28802-346529.jpg" alt="land" >
+        <img src="2.webp" alt="land" >
+        <img src="3.webp" alt="land" >
+        <img src="4.jpg" alt="land" >
+        <img src="pexels-bri-schneiter-28802-346529.jpg" alt="land" >
+        <img src="2.webp" alt="land" >
+        <img src="3.webp" alt="land" >
+        <img src="4.jpg" alt="land" >
+        <img src="pexels-bri-schneiter-28802-346529.jpg" alt="land" >
+    </div>
+
+    <script>
+        let images=document.querySelectorAll(".image-container img");
+        let viewImage=document.querySelector(".view-image");
+        let zoomImage=document.querySelector(".view-image img");
+        let closeBtn= document.querySelector(".view-image span");
+        for(let image of images){
+            image.addEventListener("click", function(e){
+                viewImage.style.display="flex";
+                zoomImage.src= e.target.src;
+
+            })  
+        }
+        closeBtn.addEventListener('click', function(){
+            viewImage.style.display="none";
+        })
+
+
+    </script>
+    
+</body>
+</html>
