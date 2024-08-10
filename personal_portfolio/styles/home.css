@@ -1,0 +1,28 @@
+/* CSS styles */
+#home {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  background-color:white;
+  
+}
+
+.img-wrapper img{
+  width: 60%;
+  height: 400px;
+  object-fit: cover;
+  margin-left: 80px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.square-text-wrapper {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
+  margin-right:160px;
+}
+.square-text-wrapper h1{
+  color:#cea135;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/helpers.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <div id="header" role="banner">
+        <div class="nav" role="navigation">
+            <div class="nav-link">
+                <a href="#home">Home</a>
+            </div>
+            <div class="nav-link">
+                <a href="#about">About</a>
+            </div>
+            <div class="nav-link">
+                <a href="#portfolio">Portfolio</a>
+            </div>
+            <div class="nav-link">
+                <a href="#contact">Contact</a>
+            </div>  
+        </div>
+    </div>
+
+    <!-- Home Section -->
+    <div id="home">
+            <div class="img-wrapper">
+                <img src="images/WhatsApp Image 2024-05-31 at 20.14.40_a6a916d1.jpg" alt="my photo" >
+            </div>
+            <div class="square-text-wrapper">
+                <h1>Welcome to my portfolio!</h1>
+                <div class="spacer20"></div>
+                <p>I'm Serena Fakha, a second year computer science student at LAU with a passion for cyber security.</p>
+            </div>
+        </div>
+
+    <!-- About Section -->
+    <section id="about">
+        <h1>About Me</h1>
+        <p>Computer science student with a strong foundation in programming languages and data structures.</p> 
+        <p>Passionate about leveraging my skills to create innovative cyber security solutions.</p> 
+        <p>Expected to graduate from LAU in May 2026 with a BS in Computer Science. </p>
+        <div class="spacer60"></div>
+        <button>Learn More</button>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <h1>My Portfolio</h1>
+        <div class="portfolio-container">
+            <div class="portfolio-item">
+                <img src="images/hotel.jpg" alt="Project 1">
+                <h2>Hotel Reservation System</h2>
+                <p>A hotel resrevation system where users can search for available rooms, make reservations, and view booking details using java.</p>
+            </div>
+            <div class="spacer60"></div>
+            <div class="portfolio-item">
+                <img src="images/gallery.jpg" alt="Project 2">
+                <h2>Image Gallery</h2>
+                <p>An image gallery where users can view a collection of images. Using HTML,CSS, and JS.</p>
+            </div>
+            <div class="spacer60"></div>
+            <div class="portfolio-item">
+                <img src="images/calculator.png" alt="Project 3">
+                <h2>Calculator</h2>
+                <p>A calculator project with basic arithmetic operations functionalities like addition substraction, multiplication, division, exponential, sine function, and cosine function. Using HTML,CSS, and JS.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h1>Get in Touch</h1>
+        <div class="spacer20"></div>
+        <form id="contact" action="contact.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea><br><br>
+            <input type="submit" value="Send">
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <div class="copyright-wrapper">
+        <p>&copy; 2024 Serena Fakha &#124; All rights reserved</p>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
